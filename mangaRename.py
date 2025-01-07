@@ -1,7 +1,7 @@
 import os
 
-manga_name = input("Whats the name of the manga:")
-filepath = input("Whats the directory path:")
+filepath = "."
+manga_name = print(os.path.basename(os.path.abspath(filepath)))
 
 for file in os.listdir(filepath):
     oldname = os.path.join(filepath,file)
